@@ -23,29 +23,7 @@ class Home extends CI_Controller {
 		$this->load->view('home');
 		$this->load->view('master_page/footer', $footer);
 	}
-
-	public function contato(){
-
-		$head = array(
-			'title' => 'Lennon Santos | Contato',
-			'key'   => '',
-			'description' => ''
-		);
-
-		$footer = array(
-			'scripts' => array(
-				"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" => "externo", 
-				"assets/js/scripts.js" => "local",
-			),
-			'nav' => '#linkContato'
-		);
-
-		$this->load->view('master_page/head', $head);
-		$this->load->view('master_page/nav');
-		$this->load->view('contato');
-		$this->load->view('master_page/footer', $footer);
-
-	}
+	
 }
 
 /*

@@ -41,7 +41,8 @@ class Login extends CI_Controller {
 			$this->session->set_userdata("logado", 1);
 			redirect(base_url('restrito'));
 		} else {
-			redirect(base_url('login/index/usuario-ou-senha-invalidos'));
+			$this->session->set_flashdata('msg-login', "usuário ou senha inválidos. <br> tente email como <b>lennonsbueno@gmail.com</b> e senha como <b>123</b>");    
+			redirect(base_url('login/'));
 		}
 	}
 

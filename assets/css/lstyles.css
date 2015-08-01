@@ -3,13 +3,9 @@
 	padding: 0;
 }
 
-a{
-	color: #3498db;
-}
+a{color: #3498db;}
 
-.active{
-	cursor: not-allowed;
-}
+.active{cursor: not-allowed;}
 
 body{
 	color: #444;
@@ -17,9 +13,7 @@ body{
 	font-size: 62.5%;
 }
 
-img{
-	max-width: 100%;
-}
+img{max-width: 100%;}
 
 .box{
 	overflow: hidden;
@@ -38,50 +32,30 @@ img{
 	width: 100%;
 }
 
-.cols {
-	float: left;
-}
+.cols {float: left;}
 
-.cols-12 {
-	width: 8.33%;
-}
+.cols-12 {width: 8.33%;}
 
-.cols-12-5x {
-	width: 41.65%;
-}
+.cols-12-5x {width: 41.65%;}
 
-.cols-6 {
-	width: 16.66%;
-}
+.cols-6 {width: 16.66%;}
 
-.cols-6-3x {
-	width: 50%;
-}
+.cols-6-3x {width: 50%;}
 
-.cols-6-5x {
-	width: 83.3%;
-}
+.cols-6-5x {width: 83.3%;}
 
-.cols-3 {
-	width: 33.33%;
-}
+.cols-3 {width: 33.33%;}
 
-.cols-3-2x {
-	width: 66.64%;
-}
+.cols-3-2x {width: 66.64%;}
 
-.cols-1{
-	width: 100%;
-}
+.cols-1{width: 100%;}
 
 .content{
 	margin: 1em;
 	padding: 1em;
 }
 
-.fechar-menu{
-	display: none;
-}
+.fechar-menu{display: none;}
 
 figure > figcaption{
 	font-size: 1.5em;
@@ -124,13 +98,24 @@ form input[type='submit']{
 	text-indent: 0;
 }
 
-.ico-fechar-menu:before{
-	content: "◄";
+.form input[type='text'],[type='tel'],[type='email'], [type='password'], .form textarea{
+	font-size: 1.7em;
+	border: 1px solid #bdc3c7;
+	background-color: transparent;
 }
 
-.ico-abrir-menu:after{
-	content: "►";
+.form input[type='tel']{
+	display: block;
+	width: 100%;
 }
+
+.form textarea{	width: 100%;}
+
+.form input[type='submit']{margin-left: 1.5em;}
+
+.ico-fechar-menu:before{content: "◄";}
+
+.ico-abrir-menu:after{content: "►";}
 
 .jumbotron{
 	background-color: #ecf0f1;
@@ -155,6 +140,8 @@ form input[type='submit']{
 	margin-top: 1em;
 }
 
+label{font-size: 1.7em;}
+
 nav.menu{
 	text-align: right;
 	width: 100%;
@@ -174,9 +161,7 @@ nav.menu ul{
 	float: right;
 }
 
-nav.menu ul li{
-	float: left;
-}	
+nav.menu ul li{float: left;}	
 
 nav.menu ul li a{
 	font-size: 1.5em;
@@ -185,30 +170,24 @@ nav.menu ul li a{
 	margin-left: 1.5em;
 }
 
-nav.menu ul li a.active:before{
-	content: "{ ";
-}
+nav.menu ul li a.active:before{content: "{ ";}
 
-nav.menu ul li a.active:hover{
-	text-decoration: none;
-}
+nav.menu ul li a.active:hover{text-decoration: none;}
 
-nav.menu ul li a.active:after{
-	content: " }";
-}
+nav.menu ul li a.active:after{content: " }";}
 
-nav.menu ul li a:hover{
-	text-decoration: underline;
-}
+nav.menu ul li a:hover{text-decoration: underline;}
+
+#msg-box li{list-style: none;}
+
+#msg-box li p{font-size: 1.7em;}
 
 .table{
 	display: table;
 	width: 100%;
 }
 
-.table .center{
-	vertical-align: middle;
-}
+.table .center{vertical-align: middle;}
 
 .table .col{
 	display: table-cell;
@@ -221,13 +200,9 @@ nav.menu ul li a:hover{
 	padding: 1em;
 }
 
-.text-center{
-	text-align: center;
-}
+.text-center{text-align: center;}
 
-.rotate-hover{
-	transition: all 0.3s;
-}
+.rotate-hover{transition: all 0.3s;}
 
 .rotate-hover:hover{
 	-ms-transform: rotate(50deg); /* IE 9 */
@@ -235,9 +210,7 @@ nav.menu ul li a:hover{
     transform: rotate(50deg);
 }
 
-section{
-	margin-top: 3em;
-}
+section{margin-top: 3em;}
 
 .title-footer{
 	font-size: 2em;
@@ -246,9 +219,7 @@ section{
 	font-weight: normal;
 }
 
-p{
-	line-height: 150%;
-}
+p{line-height: 150%;}
 
 @media screen and (max-width: 800px){	
 
@@ -257,17 +228,11 @@ p{
 		border-bottom: 5px solid #e74c3c;
 	}
 
-	nav.menu h2:before{
-		content: "";
-	}
+	nav.menu h2:before{content: "";}
 
-	.fechar-menu > a{
-		color: #555;
-	}
+	.fechar-menu > a{color: #555;}
 
-	figure{
-		text-align: center;
-	}
+	figure{text-align: center;}
 
 	nav.menu h2{
 		border: 1px solid #ddd;
@@ -276,9 +241,7 @@ p{
 		cursor: pointer;
 	}
 
-	nav.menu h2:after{
-		content: "▲";
-	}
+	nav.menu h2:after{content: "▲";}
 
 	nav.menu ul{	
 		display: none;
@@ -294,13 +257,9 @@ p{
 		overflow: auto;
 	}
 
-	nav.menu ul:active{
-		display: none;
-	}
+	nav.menu ul:active{display: none;}
 
-	nav.menu ul li{
-		float: none;		
-	}	
+	nav.menu ul li{float: none;}	
 
 	nav.menu ul li a{
 		margin-left: 0;
@@ -311,54 +270,27 @@ p{
 		text-align: left;
 	}
 
-	nav.menu ul li a#linkHome:before{
+	nav.menu ul li a:before{
 		content: "";
 		width: 20px;
 		height: 20px;
 		margin-right: 10px;
-		background: url(../img/ico/home.png);
 		display: inline-block;
 	}
 
-	nav.menu ul li a#linkProdutos:before{
-		content: "";
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		background: url(../img/ico/produtos.png);
-		display: inline-block;
-	}
+	nav.menu ul li a#linkHome:before{background: url(../img/ico/home.png);}
 
-	nav.menu ul li a#linkServicos:before{
-		content: "";
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		background: url(../img/ico/servicos.png);
-		display: inline-block;
-	}
+	nav.menu ul li a#linkProdutos:before{background: url(../img/ico/produtos.png);}
 
-	nav.menu ul li a#linkContato:before{
-		content: "";
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		background: url(../img/ico/contato.png);
-		display: inline-block;
-	}
+	nav.menu ul li a#linkServicos:before{background: url(../img/ico/servicos.png);}
 
-	nav.menu ul li a.fechar:before{
-		content: "";
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
-		background: url(../img/ico/fechar.png);
-		display: inline-block;
-	}
+	nav.menu ul li a#linkContato:before{background: url(../img/ico/contato.png);}
 
-	nav.menu ul li a.active{
-		background-color: #ecf0f1;
-	}
+	nav.menu ul li a#linkLogin:before{background: url(../img/ico/login.png);}
+
+	nav.menu ul li a.fechar:before{background: url(../img/ico/fechar.png);}
+
+	nav.menu ul li a.active{background-color: #ecf0f1;}
 
 	nav.menu ul li a:hover{
 		background-color: #ecf0f1;
@@ -375,35 +307,21 @@ p{
 		padding: 0.5em;
 	}
 
-	nav.menu ul li a.active:before{
-		content: "";
-	}
+	nav.menu ul li a.active:before{content: "";}
 
-	nav.menu ul li a.active:after{
-		content: "";
-	}
+	nav.menu ul li a.active:after{content: "";}
 
 }
 
 @media screen and (max-width: 650px){
 
-	.cols{
-		width: 100%;
-	}
+	.cols{width: 100%;}
 
-	.table{
-		display: block;
-	}
+	.table{display: block;}
 
-	.table .row{
-		display: block;
-		padding: 0;
-	}
+	.table .row{display: block;	padding: 0;}
 
-	.table .row .col{
-		display: block;
-		text-align: center;
-	}
+	.table .row .col{display: block;text-align: center;}
 
 	nav.menu h2{
 		display: block;

@@ -1,4 +1,5 @@
-<body class="box">	
+<body>
+	<div class="box">	
 	<header>
 		<div class="sub-box">
 			<div class="content">
@@ -13,7 +14,7 @@
 		 						<ul>
 		 							<li><a id="linkHome" href="<?php echo base_url(); ?>">Home</a></li>
 		 							<li><a id="linkLogin" href="<?php echo base_url('login'); ?>">Login</a></li>
-									<li><a id="linkContato" href="<?php echo base_url('home/contato'); ?>">Contato</a></li>
+									<li><a id="linkContato" href="<?php echo base_url('contato'); ?>">Contato</a></li>
 		 							<li class="fechar-menu"><a href="#" class="fechar">Fechar menu</a></li>
 		 						</ul>
 		 					</nav>
