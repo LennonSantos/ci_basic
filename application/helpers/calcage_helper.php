@@ -3,10 +3,12 @@
 if ( ! function_exists('calcage'))
 {
 
+	//este helper calcula a idade a partir de uma data inserida na função
+	// $this->load->helper('calcage');
+	// echo calcage('17/05/1995');
+
     function calcage($data)
     {
-        //$data = '17/05/1995';
-
         list($dia, $mes, $ano) = explode('/', $data);
 
         $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));

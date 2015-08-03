@@ -15,7 +15,7 @@ class e404 extends CI_Controller {
 				"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" => "externo", 
 				"assets/js/scripts.js" => "local",
 			),
-			'nav' => '#linkHome'
+			'nav' => ''
 		);
 
 		$this->load->view('master_page/head', $head);

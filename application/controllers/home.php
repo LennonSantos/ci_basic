@@ -15,8 +15,8 @@ class Home extends CI_Controller {
 				"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" => "externo", 
 				"assets/js/scripts.js" => "local",
 			),
-			'nav' => '#linkHome'
-		);
+			'link_ativo' => '#linkHome'
+		);		
 
 		$this->load->view('master_page/head', $head);
 		$this->load->view('master_page/nav');
@@ -33,7 +33,7 @@ EXEMPLO FUNCTION VIEW
 public function AQUI-A-VIEW(){
 	
 	//AQUI DEFINIMOS AS META TAGS
-	$header = array(
+	$head = array(
 		'title' => 'Lennon Santos | designer de interface e web designer',
 		'key'   => 'lennon santos, lennon, desenvolvedor, designer, web design, são josé dos campos',
 		'description' => 'Olá eu sou Lennon Santos, tenho vários trabalhos legais, venha ver :)'
@@ -48,11 +48,11 @@ public function AQUI-A-VIEW(){
 			"assets/js/use-mask-tel.js" => "local",
 			"assets/js/scroll.js" => "local"
 		),
-		'nav' => 'id do link da pagina [exemplo: #linkHome]'
+		'link_ativo' => 'id do link da pagina [exemplo: #linkHome]'
 	);	
 	
 	//AQUI CARREGAMOS NOSSO HTML EM PARTES, PODERIA SER SÓ EM UM ARQUIVO, MAS FICA A SEU CRITÉRIO
-	$this->load->view('master_page/head', $header);
+	$this->load->view('master_page/head', $head);
 	$this->load->view('master_page/nav', $nav);
 	$this->load->view('contato');
 	$this->load->view('master_page/footer', $footer);

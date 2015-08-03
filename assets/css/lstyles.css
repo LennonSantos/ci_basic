@@ -79,13 +79,14 @@ footer p{
 form input{
 	border: 0;
 	height: 3em;
-	text-indent: 1em;
 }
 
-form input[type='text'], [type='email'], [type='password']{
+form input[type='text'], [type='email'], [type='password'], [type='url'],[type='tel'],[type='number'], textarea{
 	font-size: 1.5em;
 	color: #555;
 	width: 100%;
+	font-family: "lato", sans-serif;	
+	text-indent: 0.5em;
 }
 
 form input[type='submit']{
@@ -98,7 +99,7 @@ form input[type='submit']{
 	text-indent: 0;
 }
 
-.form input[type='text'],[type='tel'],[type='email'], [type='password'], .form textarea{
+.form input[type='text'],[type='tel'],[type='email'], [type='password'], [type='url'],[type='number'], .form textarea{
 	font-size: 1.7em;
 	border: 1px solid #bdc3c7;
 	background-color: transparent;
@@ -198,6 +199,11 @@ nav.menu ul li a:hover{text-decoration: underline;}
 	display: table-row;
 	overflow: hidden;
 	padding: 1em;
+}
+
+textarea{
+	padding: 7.5px;
+	text-indent: 0;
 }
 
 .text-center{text-align: center;}

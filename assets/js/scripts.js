@@ -29,8 +29,8 @@ window.onload = function() {
 	});
 
 
+	//fechar menu
 	$(".fechar-menu").click(function(event) {
-		/* Act on the event */
 
 		$("nav.menu > ul").hide('slow/400/fast', function() {			
 		});
@@ -38,5 +38,5 @@ window.onload = function() {
 		menu = "fechado";
 
 	});
-
+	//fim fechar menu
 };

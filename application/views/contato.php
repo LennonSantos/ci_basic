@@ -9,7 +9,7 @@
 				<div class="cols cols-6-3x">
 					<div class="content">
 						<label>Nome</label>
-						<input type="text" name="txtNome" pattern="[a-z-A-Z\s]+$" required>
+						<input id="txtNome" type="text" name="txtNome" pattern="[a-z-A-Z\s]+$" required>
 					</div>
 				</div>
 				<div class="cols cols-6-3x">
@@ -23,13 +23,13 @@
 				<div class="cols cols-6-3x">
 					<div class="content">
 						<label>Email</label>
-						<input type="email" name="txtEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
+						<input id="txtEmail"  type="email" name="txtEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> 
 					</div>
 				</div>
 				<div class="cols cols-6-3x">
 					<div class="content">
 						<label>Website, Facebook..</label>
-						<input type="text" name="txtUrl">
+						<input id="txtUrl" type="url" name="txtUrl">
 					</div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 				<div class="cols cols-1">
 					<div class="content">
 						<label>Mensagem</label>
-						<textarea rows="5" name="txtMsg"></textarea>
+						<textarea id="txtMsg" rows="5" name="txtMsg"></textarea>
 					</div>
 				</div>
 			</div>		

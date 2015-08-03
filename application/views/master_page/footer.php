@@ -1,5 +1,6 @@
         <footer>
         <!-- footer -->
+        <p class="text-center"><a href="http://lennonsantos.com.br" target="_blank">por Lennon santos</a></p>
         </footer>
     	 <!-- jQuery & Scripts --> 
         <?php
@@ -12,7 +13,7 @@
         	}
         ?>
         <script type="text/javascript">
-            $("<?php echo $nav;  ?>").addClass('active');
+            $("<?php echo $link_ativo;  ?>").addClass('active');
         </script>
     </div><!-- .box -->
 </body>

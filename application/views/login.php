@@ -7,7 +7,7 @@
 				<div class="cols cols-6-3x">
 					<div class="content">
 						<label>Email</label>
-						<input type="email" name="txtEmail" placeholder="lennonsbueno@gmail.com">
+						<input id="txtEmail" type="email" name="txtEmail" placeholder="lennonsbueno@gmail.com">
 					</div>
 				</div>
 				<div class="cols cols-6-3x">
