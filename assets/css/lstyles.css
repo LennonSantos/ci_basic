@@ -26,6 +26,52 @@ img{max-width: 100%;}
 	padding-right: 1em;
 }
 
+.box-mensagens{
+
+}
+
+.box-mensagens li{
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 2em;
+	padding: 1em;
+	background-color: #ecf0f1;
+}
+
+.box-mensagens li p{
+	font-size: 1.5em;
+}
+
+.box-mensagens li p.msg{
+	font-size: 1.7em;
+	padding: 0.5em;
+}
+
+.box-mensagens li p.info{
+	color: #999;
+}
+
+button{
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+button.default{
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 1.5em;
+	background-color: #ecf0f1;
+	border: 1px solid #bdc3c7;
+}
+
+button.default:hover{
+	background-color: #bdc3c7;
+}
+
+button.default a{
+	text-decoration: none;
+	color: #444;
+}
+
 .row{
 	display: block;
 	overflow: hidden;
@@ -182,6 +228,43 @@ nav.menu ul li a:hover{text-decoration: underline;}
 #msg-box li{list-style: none;}
 
 #msg-box li p{font-size: 1.7em;}
+
+.menu-aba{
+	display: block;
+	overflow: hidden;
+	list-style: none;	
+	border-bottom: 1px solid #ddd;
+}
+
+.menu-aba > li{
+	float: left;
+	padding: 1em;
+	font-size: 1.7em;
+}
+
+.menu-aba > li.active{	
+	background-color: #ecf0f1;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-right:  1px solid #ddd;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.menu-aba > li a{
+	text-decoration: none;	
+}
+
+.menu-aba > li.active a{
+	cursor: not-allowed;
+}
+
+.menu-aba > li:hover{
+	background-color: #ecf0f1;	
+	border-top:  1px solid #ddd;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
 
 .table{
 	display: table;

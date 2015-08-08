@@ -8,7 +8,7 @@
 </section>
 <section>
 	<div class="sub-box">
-		<form action="<?php echo base_url('captcha/verifica/login'); ?>" method="post" class="form">			
+		<form action="<?php echo base_url($action); ?>" method="post" class="form">			
 			<div class="row">
 				<div class="cols cols-1">
 					<div class="content">
@@ -19,5 +19,6 @@
 			</div>	
 			<input type="submit">		
 		</form>
+
 	</div>
 </section>

@@ -2,6 +2,18 @@
 
 class Contato extends CI_Controller {
 
+	public function __construct(){
+
+		parent::__construct();		
+
+		// library de segurança
+		$this->load->library('seguranca');
+
+		//verefica se á bot, o usuario pode errar o email e senha 10 vezes
+		$this->seguranca->verifica_bot(10, "contato");
+
+	}
+
 	public function index(){	
 
 		// cria o head da pagina contato
@@ -44,7 +56,7 @@ class Contato extends CI_Controller {
 		$this->form_validation->set_rules('txtNome', 'Nome', 'required|min_length[4]|max_length[49]');
 		$this->form_validation->set_rules('txtTel', 'Telefone', 'required|min_length[4]|max_length[20]');
 		$this->form_validation->set_rules('txtEmail', 'Email', 'required|min_length[4]|max_length[49]|valid_email');
-		$this->form_validation->set_rules('txtUrl', 'Link', 'required|min_length[4]|max_length[49]');
+		$this->form_validation->set_rules('txtUrl', 'Link', 'min_length[4]|max_length[49]');
 		$this->form_validation->set_rules('txtMsg', 'Mensagem', 'required|min_length[4]|max_length[5000]');
 
 		$inputs = array(
@@ -101,7 +113,9 @@ class Contato extends CI_Controller {
 		} // fim else	                   
 
 		//seta uma session com os avisos, erros..
-		$this->session->set_flashdata('msg-contato', $avisos);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+		$this->session->set_flashdata('msg-contato', $avisos);       
+
+		$this->seguranca->set_session_seguranca();	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 		// redireciona para a pagina contato
 		redirect(base_url('contato'));

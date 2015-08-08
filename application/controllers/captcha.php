@@ -9,7 +9,7 @@ class Captcha extends CI_Controller {
 
 	}
 
-	public function index(){
+	public function index($pagina =  null){
 
 		$head = array(
 			'title' => 'Lennon Santos | designer de interface e web designer',
@@ -34,6 +34,7 @@ class Captcha extends CI_Controller {
 		$captcha = array(
 			"n1" => $n1,
 			"n2" => $n2,
+			"action" => "captcha/verifica/$pagina"
 		);
 
         $this->load->view('master_page/head', $head);
@@ -50,14 +51,14 @@ class Captcha extends CI_Controller {
 
 			$this->load->library('seguranca');
 
-			$this->seguranca->unset_seguranca_login();
+			$this->seguranca->unset_session_seguranca();
 			$this->session->unset_userdata("result");
 
-			redirect( base_url("{$pagina}") );
+			redirect( base_url($pagina) );
 
 		}else{
 
-			redirect( base_url("captcha") );
+			redirect( base_url("captcha/index/$pagina") );
 
 		}
 

@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 		$this->load->library('seguranca');
 
 		//verefica se á bot, o usuario pode errar o email e senha 10 vezes
-		$this->seguranca->verifica_bot_login(10);
+		$this->seguranca->verifica_bot(10, "login");
 
 	}
  
@@ -26,7 +26,7 @@ class Login extends CI_Controller {
 		// carrega os scripts da pagina login
 		$footer = array(
 			'scripts' => array(
-				"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" => "externo", 
+				"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" => "externo", 				
 				"assets/js/scripts.js" => "local",
 				"assets/js/jquery.cookie.js" => "local",
 				"assets/js/login-scripts.js" => "local"
@@ -62,10 +62,10 @@ class Login extends CI_Controller {
 			setcookie("txtEmail", "{$email}", (time() + (3600 * 24 * 7)));
 
 			// aqui destruimos a session de segurança login pois o usuário informou os dados corretos
-			$this->session->unset_userdata("seguranca_login");
+			$this->session->unset_userdata("seguranca");
 
-			// destroi a session seguranca_login pois o usuario acertou a senha
-			$this->seguranca->unset_seguranca_login();
+			// destroi a session seguranca pois o usuario acertou a senha
+			$this->seguranca->unset_session_seguranca();
 
 			redirect(base_url('restrito'));
 
@@ -74,9 +74,9 @@ class Login extends CI_Controller {
 			// seta um cookie com email do usuario por 20 segundos caso ele erre o email e senha
 			setcookie("txtEmail", "{$email}", (time() + (20)));				 	
 
-			$this->seguranca->set_seguranca_login();			
+			$this->seguranca->set_session_seguranca();			
 
-			//$s = $this->session->userdata("seguranca_login");
+			$s = $this->session->userdata("seguranca");
 
 			// seta uma session de menssagem
 			$this->session->set_flashdata('msg-login', "usuário ou senha inválidos. <br> tente usar email como <b>lennonsbueno@gmail.com</b> e senha como <b>123</b> {$s}"); 
