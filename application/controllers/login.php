@@ -76,7 +76,7 @@ class Login extends CI_Controller {
 
 			$this->seguranca->set_session_seguranca();			
 
-			$s = $this->session->userdata("seguranca");
+			//$s = $this->session->userdata("seguranca");
 
 			// seta uma session de menssagem
 			$this->session->set_flashdata('msg-login', "usuário ou senha inválidos. <br> tente usar email como <b>lennonsbueno@gmail.com</b> e senha como <b>123</b> {$s}"); 

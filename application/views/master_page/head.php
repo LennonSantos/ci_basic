@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title><?php echo $title; ?></title>  
-   <link rel="stylesheet" href="<?php echo base_url('assets/css/lstyles.css'); ?>">
+   <link rel="stylesheet" href="<?php echo base_url('assets/css/ci_basic.css'); ?>">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>

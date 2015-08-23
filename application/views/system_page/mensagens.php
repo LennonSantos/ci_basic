@@ -18,7 +18,7 @@
 					<p class="info"><b>Email:</b> <?php echo $value['email_contato'];  ?> &bull; <b>Telefone:</b> <?php echo $value['tel_contato']; ?> &bull; <b>Data:</b> <?php echo $value['data_contato'];  ?></p>
 					<div class="content">
 					<?php if( $value['lixo_contato'] == 0 ){ ?>
-						<button class="default"><a href="<?php $id = $value['id_contato']; $action = "restrito/action/arquivar/{$id}"; echo base_url($action); ?>">Enviar para lixeira &raquo;</a></button>					
+						<a href="<?php $id = $value['id_contato']; $action = "restrito/action/arquivar/{$id}"; echo base_url($action); ?>">Enviar para lixeira &raquo;</a>				
 					<?php } ?>						
 					</div>
 				</li>

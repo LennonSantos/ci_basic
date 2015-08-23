@@ -50,28 +50,6 @@ img{max-width: 100%;}
 	color: #999;
 }
 
-button{
-	transition: background-color 0.3s;
-	cursor: pointer;
-}
-
-button.default{
-	display: inline-block;
-	padding: 0.5em;
-	font-size: 1.5em;
-	background-color: #ecf0f1;
-	border: 1px solid #bdc3c7;
-}
-
-button.default:hover{
-	background-color: #bdc3c7;
-}
-
-button.default a{
-	text-decoration: none;
-	color: #444;
-}
-
 .row{
 	display: block;
 	overflow: hidden;
@@ -127,7 +105,7 @@ form input{
 	height: 3em;
 }
 
-form input[type='text'], [type='email'], [type='password'], [type='url'],[type='tel'],[type='number'], textarea{
+form input[type='text'], [type='email'], [type='password'], [type='url'],[type='tel'],[type='number'],[type='url'], form textarea{
 	font-size: 1.5em;
 	color: #555;
 	width: 100%;
@@ -264,6 +242,26 @@ nav.menu ul li a:hover{text-decoration: underline;}
 	border-top:  1px solid #ddd;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+}
+
+header{
+	border-bottom: 1px solid #bdc3c7;
+}
+
+header h1 a{
+	text-decoration: none;
+	color: #444;
+}
+
+ol > li{
+	font-size: 1.7em;
+	margin-top: 1em;
+}
+
+ol > li > ul >li{
+	font-size: 15px;
+	color: #777;
+	list-style: none;
 }
 
 .table{
